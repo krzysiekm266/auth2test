@@ -1,0 +1,13 @@
+<div class="register">
+  <p>register works!</p>
+  <form (ngSubmit)="register()" [formGroup]="registerForm">
+    <label for="user">User: </label>
+    <input type="text" name="user" id="user" formControlName="user">
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" formControlName="email">
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" formControlName="password">
+    <button type="submit">Register</button>
+  </form>
+</div>
+

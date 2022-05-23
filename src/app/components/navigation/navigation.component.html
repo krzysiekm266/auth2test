@@ -1,0 +1,9 @@
+<nav class="navigation">
+  <div class="logo">
+    <fa-icon routerLink="/" (click)="showWelcome()" [icon]="faBook" size="4x" class="book"></fa-icon>
+  </div>
+
+  <a routerLink="/auth" (click)="hideWelcome()">Auth</a>
+  <a routerLink="/auth/login" (click)="hideWelcome()">Login</a>
+  <a routerLink="/auth/register" (click)="hideWelcome()">Register</a>
+</nav>

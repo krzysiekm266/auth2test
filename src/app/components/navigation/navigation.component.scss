@@ -1,0 +1,62 @@
+@import "../../../variables.scss";
+
+* {
+  display: flex;
+}
+.logo {
+  z-index: 1;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+  color: black;
+  margin-right: 32px;
+  padding: 4px;
+
+  .book {
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      cursor: pointer;
+      color: lighten(black,20%)
+    }
+  }
+
+}
+.navigation {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 10vh;
+  min-height: 10vh;
+  //gap:12px;
+  padding: 0 12px;
+ // border: 2px solid green;
+  overflow-y: visible;
+  background-color: $navigation-bg;
+
+  a {
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    text-decoration: none;
+    padding: 12px;
+    border: 2px solid transparent;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    &:hover {
+      z-index: 1;
+      background-color: lighten($navigation-bg,5%);
+      align-self: center;
+      height: 120%;
+      box-shadow: 3px 3px 5px black;
+      border-radius: 5px;
+
+
+    }
+
+  }
+}
