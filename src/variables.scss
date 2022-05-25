@@ -1,2 +1,26 @@
-$navigation-bg: rgb(228, 83, 0);
-$socialmedia-bg: rgb(27, 26, 26);
+//colors
+$navigation-bg-color: rgb(228, 83, 0);
+$navigation-text-color:rgb(0, 0, 0);
+$navigation-text-active-color:rgb(255, 255, 255);
+
+$footer-text-color:rgb(214, 200, 200);
+$footer-bg-color:rgb(27, 26, 26);
+
+$socialmedia-bg-color: rgb(27, 26, 26);
+$socialmedia-icon-color:white;
+$logo-color:rgb(0, 0, 0);
+
+$app-bg-color:white;
+$body-bg-color:white;
+//sizes vh
+$socialmedia-height:5vh;
+$navigation-height:7vh;
+$content-height:75vh;
+$footer-height:13vh;
+//sizes px
+$socialmedia-min-height:30px;
+$navigation-min-height:50px;
+$content-min-height:300px;
+$footer-min-height:100px;
+
+

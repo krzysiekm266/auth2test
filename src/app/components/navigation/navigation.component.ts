@@ -1,10 +1,7 @@
+import { map, Observable } from 'rxjs';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import {
-  faBrain,
-  faGears,
-  faGear,
-  faBook,
-} from '@fortawesome/free-solid-svg-icons';
+import { faHouseChimney } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navigation',
@@ -13,21 +10,16 @@ import {
 })
 export class NavigationComponent implements OnInit {
   //fort awsome icons
-  faBrain = faBrain;
-  faGears = faGears;
-  faGear = faGear;
-  faBook = faBook;
+
+  faHouseChimney = faHouseChimney;
   //properties
-  @Output() welcomeShow = new EventEmitter<boolean>();
-  @Output() welcomeHide = new EventEmitter<boolean>();
-  constructor() {}
+  home: boolean = false;
 
-  ngOnInit(): void {}
-  showWelcome() {
-    this.welcomeShow.emit(true);
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+
+
   }
 
-  hideWelcome() {
-    this.welcomeHide.emit(false);
-  }
 }

@@ -1,19 +1,7 @@
 <div class="app">
-  <!-- <p>main component</p> -->
-  <div class="socialmedia">
-    <a href="">
-      <fa-icon [icon]="faTwitter" class="icon" size="lg"></fa-icon>
-    </a>
-    <a href="">
-      <fa-icon [icon]="faFacebook" class="icon" size="lg"></fa-icon>
-    </a>
-
-  </div>
-
-  <app-navigation (welcomeShow)="onWelcomeShow($event)" (welcomeHide)="onWelcomeHide($event)"></app-navigation>
-
-  <div *ngIf="welcome" class="welcome">
-    welcome
-  </div>
+  <app-socialmedia></app-socialmedia>
+  <app-navigation ></app-navigation>
   <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </div>
+

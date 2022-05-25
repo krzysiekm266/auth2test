@@ -9,11 +9,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { CookieService } from 'ngx-cookie-service';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SocialmediaComponent } from './components/socialmedia/socialmedia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    WelcomeComponent,
+    FooterComponent,
+    SocialmediaComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +30,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     HttpClientXsrfModule
 
   ],
-  providers: [AuthService,{provide:HTTP_INTERCEPTORS,useClass:AuthUserInterceptor,multi:true}],
+  providers: [AuthService,CookieService,{provide:HTTP_INTERCEPTORS,useClass:AuthUserInterceptor,multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

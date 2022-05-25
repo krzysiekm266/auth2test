@@ -1,9 +1,9 @@
 <nav class="navigation">
-  <div class="logo">
-    <fa-icon routerLink="/" (click)="showWelcome()" [icon]="faBook" size="4x" class="book"></fa-icon>
+  <div class="logo" routerLink="/" >
+    <fa-icon  [icon]="faHouseChimney" size="3x" class="home"></fa-icon>
   </div>
 
-  <a routerLink="/auth" (click)="hideWelcome()">Auth</a>
-  <a routerLink="/auth/login" (click)="hideWelcome()">Login</a>
-  <a routerLink="/auth/register" (click)="hideWelcome()">Register</a>
+  <a class="nav-link" routerLink="/auth/login" routerLinkActive="active" >Login</a>
+  <a class="nav-link" routerLink="/auth/register" routerLinkActive="active" >Register</a>
+
 </nav>

@@ -1,0 +1,17 @@
+@import "../../../variables.scss";
+
+* {
+  display: flex;
+}
+.footer {
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: $footer-height;
+  min-height: $footer-min-height;
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+}

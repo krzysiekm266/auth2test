@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
 import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -6,18 +6,17 @@ import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   //font awsome icons
   faTwitter = faTwitter;
   faFacebook = faFacebook;
   title = 'auth2test';
   //properties
-  welcome:boolean = true;
-  onWelcomeShow(value:boolean) {
-    this.welcome = value;
+
+
+  ngOnInit():void {
+
   }
 
-  onWelcomeHide(value:boolean) {
-    this.welcome = value;
-  }
+
 }

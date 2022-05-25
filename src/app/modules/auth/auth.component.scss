@@ -6,32 +6,11 @@
   align-items: stretch;
   justify-content: center;
   width: 100vw;
-
+  // height: $content-height;
+  // min-height: $content-min-height;
   gap: 12px;
   padding: 6px;
   border: 2px solid black;
 
-}
-
-form {
- flex-direction: column;
-}
-
-label {
-
-  margin: 0px 6px;
-}
-
-input {
-  padding: 6px;
-  margin: 6px;
-  margin-bottom: 12px;
-}
-
-button {
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
-  margin: 6px;
 }
 

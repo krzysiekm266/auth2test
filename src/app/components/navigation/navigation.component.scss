@@ -10,53 +10,62 @@
   justify-content: center;
   width: 100px;
   height: 100%;
-  color: black;
-  margin-right: 32px;
-  padding: 4px;
+  color: $logo-color;
+ // margin-right: 32px;
+  &:hover:not(.active) {
+    cursor: pointer;
+    box-shadow: 3px 3px 5px black, inset 0 0 3px black;
+    height: 100%;
 
-  .book {
+  }
+  .home {
+    padding: 4px;
     align-items: center;
     justify-content: center;
-    &:hover {
-      cursor: pointer;
-      color: lighten(black,20%)
-    }
+
   }
 
 }
+
+
 .navigation {
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
   width: 100vw;
-  height: 10vh;
-  min-height: 10vh;
-  //gap:12px;
-  padding: 0 12px;
- // border: 2px solid green;
+  height: $navigation-height;
+  min-height: $navigation-min-height;
+  padding-right:  12px;
   overflow-y: visible;
-  background-color: $navigation-bg;
-
-  a {
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    text-decoration: none;
-    padding: 12px;
-    border: 2px solid transparent;
-    color: black;
-    font-weight: bold;
-    font-size: large;
-    &:hover {
-      z-index: 1;
-      background-color: lighten($navigation-bg,5%);
-      align-self: center;
-      height: 120%;
-      box-shadow: 3px 3px 5px black;
-      border-radius: 5px;
+  background-color: $navigation-bg-color;
 
 
-    }
+}
 
+.nav-link {
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  text-decoration: none;
+  padding: 12px;
+  color: $navigation-text-color;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: large;
+  background-color: $navigation-bg-color;
+
+  &:hover:not(.active) {
+    z-index: 1;
+    background-color: lighten($navigation-bg-color,5%);
+    align-self: center;
+    height: 110%;
+    box-shadow: 3px 3px 5px black, inset 0 0 3px black;
   }
+
+}
+.active {
+  background-color: $socialmedia-bg-color;
+  color: $navigation-text-active-color;
+
 }
